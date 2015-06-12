@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install caffeine
+      mac_pkg: pkg_type=app
+               url=http://download.lightheadsw.com/download.php?software=caffeine
+               archive_type=dmg archive_path=Caffeine.app
+      sudo: yes
+
